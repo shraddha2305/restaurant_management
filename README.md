@@ -18,4 +18,4 @@ Once customer is logged in then follow the option displayed on console terminal
 [Username: admin
 Password: admin]
 
-
+4. restaurant.py is main file to run
