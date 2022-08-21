@@ -15,7 +15,7 @@ Once customer is logged in then follow the option displayed on console terminal
 
 3. If admin login then its username and password is predefined as follows:
 
-[Username: abc
-Password: abc]
+[Username: admin
+Password: admin]
 
 
