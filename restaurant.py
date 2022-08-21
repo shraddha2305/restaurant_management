@@ -60,8 +60,7 @@ def display_cart(cust_id):
 def display_customer_menu():
     ''' Display menu for customer login'''
     while True:
-        cust_username = input(
-            "Hello Customer, Please enter your registered username –")
+        cust_username = input("Hello Customer, Please enter your registered username –")
         cust_password = input("Please Enter your password –")
         customer_id = customer.customer_login(cust_username, cust_password)
         if customer_id == 0:
@@ -79,6 +78,10 @@ def display_customer_menu():
         print("6. Logout")
         print("0. To 'exit'")
         option = input('Enter your choice: ')
+        if option == "":
+            print("Invalid option selected")
+            continue
+    
         if 0 == int(option):
             break
         elif 1 == int(option):  # View Menu
@@ -183,6 +186,10 @@ def display_admin_menu():
         #print("3. Generate Bill")
         print("0: Exit")
         choice = input("Enter choice :")
+        if choice == "":
+            print("Invalid option selected")
+            continue
+        
         if int(choice) == 1:
             if(len(order.order_dict) <= 0):
                 print("No order placed")
